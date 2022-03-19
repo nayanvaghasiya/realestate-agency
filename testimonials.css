@@ -1,0 +1,39 @@
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: auto;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 5px;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+    padding: 5px;
+  }
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
